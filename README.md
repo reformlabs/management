@@ -2,8 +2,8 @@
   <img src="https://raw.githubusercontent.com/reformlabs/.github/addbf9601ac994c6a7d2fa8aa7fd9b758c070f86/reformlabs%20loading.svg" width="1096" height="496" />
 </div>
 
-# Multi Language by Reform Labs
-An advanced discord.js v14 and TypeScript based bot that supports all the languages that Discord supports.
+# Official Management App of Reform Labs
+An advanced discord.js v14 and TypeScript based bot that supports all the languages that Discord supports and official discord app of Reform Labs main server.
 
 > [!IMPORTANT]
 > This project is developed by **Reform Labs**. Users are free to use the system and contribute, but they may not redistribute it by claiming ownership as if it were their own project.
