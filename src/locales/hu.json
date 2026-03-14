@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Bejelentkezve mint {{user}}!",
+    "interaction_error": "Hiba történt a parancs futtatása közben!",
+    "no_permission": "Nem rendelkezik a parancs használatához szükséges engedélyekkel."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Méri a bot késleltetési idejét.",
+        "response": "Pong! Gecikme: {{latency}} ms"
+      },
+      "serverinfo": {
+        "description": "Információkat ad a szerverről."
+      },
+      "userinfo": {
+        "description": "Információkat ad egy felhasználóról.",
+        "user_description": "Felhasználó, akinek az adatait megkapjuk"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Kirúg egy felhasználót a szerverről.",
+        "user_desc": "Felrúgandó felhasználó",
+        "reason_desc": "A kiutasítás oka",
+        "success": "{{user}} başarıyla sunucudan atıldı. Sebep: {{reason}}",
+        "error": "Hiba történt a felhasználó rúgása közben."
+      },
+      "ban": {
+        "description": "Kitiltja a felhasználót a szerverről.",
+        "user_desc": "Felhasználót tiltani",
+        "reason_desc": "A tiltás oka",
+        "delete_messages_desc": "Üzenetelőzmények törlése (napokban)",
+        "success": "{{user}} sikeresen kitiltva. Ok: {{ok}}",
+        "error": "Kullanıcı yasaklanırken bir hata oluştu."
+      },
+      "unban": {
+        "description": "Feloldja a felhasználó kitiltását.",
+        "id_desc": "Yasağı kaldırılacak kullanıcı ID'si",
+        "success": "A(z) {{id}} azonosítójú felhasználó kitiltását sikeresen eltávolítottuk.",
+        "error": "Hiba történt a felhasználói kitiltás eltávolítása közben. Győződjön meg arról, hogy az azonosító helyes."
+      },
+      "timeout": {
+        "description": "Bir kullanıcıya susturma cezası verir.",
+        "user_desc": "Elnémítandó felhasználó",
+        "duration_desc": "Süre (dakika)",
+        "reason_desc": "A hallgatás oka",
+        "success": "{{user}} el lett némítva {{duration}} percre. Ok: {{ok}}",
+        "error": "Hiba történt a felhasználó némítása közben."
+      },
+      "clear": {
+        "description": "Törli a megadott mennyiségű üzenetet.",
+        "amount_desc": "Törölni kívánt üzenetek száma (1-100)",
+        "success": "{{amount}} üzenet sikeresen törölve.",
+        "error": "Hiba történt az üzenetek törlése közben."
+      },
+      "slowmode": {
+        "description": "Beállítja a csatorna lassú üzemmódjának időtartamát.",
+        "duration_desc": "Időtartam (másodperc, 0 kikapcsol)",
+        "success": "A csatorna lassú üzemmódja {{duration}} másodpercre van állítva.",
+        "error": "Hiba történt a lassú üzemmód beállítása közben."
+      },
+      "lock": {
+        "description": "Bezárja a csatornát az üzenetküldéshez.",
+        "success": "A csatorna zárolása sikeresen megtörtént.",
+        "error": "Hiba történt a csatorna zárolásakor."
+      },
+      "unlock": {
+        "description": "Feloldja a csatorna zárolását.",
+        "success": "A csatorna zárolása sikeresen feloldva.",
+        "error": "Hiba történt a csatorna feloldása közben."
+      },
+      "setup": {
+        "description": "Konfigurálja a szerver beállításait.",
+        "logchannel_desc": "Beállítja azt a csatornát, amelyre a naplók elküldésre kerülnek.",
+        "logchannel_opt_desc": "log csatorna",
+        "modrole_desc": "Beállítja a jogosultsági szerepet.",
+        "modrole_opt_desc": "Hatósági szerepkör",
+        "success": "A {{type}} sikeresen beállítva a következőre: {{value}}.",
+        "error": "Hiba történt a beállítás mentése közben."
+      }
+    }
+  },
+  "info": {
+    "name": "Név",
+    "id": "ID",
+    "created_at": "Létrehozás dátuma",
+    "members": "tagok",
+    "owner": "Tulajdonos",
+    "roles": "Henger",
+    "joined_at": "Csatlakozási dátum"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Üzenet törölve",
+      "description": "**Kanal:** {{channel}}\n**Yazar:** {{author}}\n**İçerik:** {{tartalom}}"
+    },
+    "message_update": {
+      "title": "Üzenet szerkesztve",
+      "description": "**Kanal:** {{channel}}\n**Yazar:** {{author}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{új tartalom}}"
+    },
+    "member_join": {
+      "title": "Tag csatlakozott",
+      "description": "{{user}} csatlakozott a szerverhez. Összes tag: {{count}}"
+    },
+    "member_leave": {
+      "title": "Tag baloldal",
+      "description": "{{user}} elhagyta a szervert. Összes tag: {{count}}"
+    }
+  }
+}

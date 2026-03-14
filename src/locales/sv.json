@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Inloggad som {{user}}!",
+    "interaction_error": "Ett fel uppstod när det här kommandot kördes!",
+    "no_permission": "Du har inte de nödvändiga behörigheterna för att använda det här kommandot."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Mäter botens latens.",
+        "response": "Pong! Gecikme: {{latency}}ms"
+      },
+      "serverinfo": {
+        "description": "Ger information om servern."
+      },
+      "userinfo": {
+        "description": "Ger information om en användare.",
+        "user_description": "Användare vars information kommer att erhållas"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Sparkar en användare från servern.",
+        "user_desc": "Atılacak kullanıcı",
+        "reason_desc": "Skäl till utvisning",
+        "success": "{{user}} har framgångsrikt sparkats från servern. Orsak: {{reason}}",
+        "error": "Kullanıcı atılırken bir hata oluştu."
+      },
+      "ban": {
+        "description": "Blockerar en användare från servern.",
+        "user_desc": "Användare att förbjuda",
+        "reason_desc": "Yasaklanma sebebi",
+        "delete_messages_desc": "Radera meddelandehistorik (i dagar)",
+        "success": "{{user}} har förbjudits framgångsrikt. Orsak: {{reason}}",
+        "error": "Ett fel uppstod när användaren blockerades."
+      },
+      "unban": {
+        "description": "Avstänger en användare.",
+        "id_desc": "Användar-ID ska avföras",
+        "success": "Förbudet för användaren med ID {{id}} har tagits bort.",
+        "error": "Ett fel uppstod när användarförbudet skulle tas bort. Se till att ID är korrekt."
+      },
+      "timeout": {
+        "description": "Tillfogar en användare en tystnadsstraff.",
+        "user_desc": "Susturulacak kullanıcı",
+        "duration_desc": "Varaktighet (minuter)",
+        "reason_desc": "Anledning till tystnad",
+        "success": "{{user}} har tystats i {{duration}} minuter. Orsak: {{reason}}",
+        "error": "Ett fel uppstod när användaren tystades."
+      },
+      "clear": {
+        "description": "Belirtilen miktarda mesajı siler.",
+        "amount_desc": "Antal meddelanden att radera (1-100)",
+        "success": "Meddelandet {{amount}} har raderats.",
+        "error": "Ett fel uppstod när meddelanden skulle raderas."
+      },
+      "slowmode": {
+        "description": "Ställer in kanalens varaktighet i långsamt läge.",
+        "duration_desc": "Varaktighet (sekunder, 0 stängs av)",
+        "success": "Kanalens långsamma läge är inställt på {{duration}} sekunder.",
+        "error": "Ett fel uppstod vid inställning av långsamt läge."
+      },
+      "lock": {
+        "description": "Stänger kanalen för att skicka meddelanden.",
+        "success": "Kanalen har låsts.",
+        "error": "Ett fel uppstod när kanalen låstes."
+      },
+      "unlock": {
+        "description": "Låser upp kanalen.",
+        "success": "Kanalen har låsts upp.",
+        "error": "Ett fel uppstod när kanalen låstes upp."
+      },
+      "setup": {
+        "description": "Konfigurerar serverinställningar.",
+        "logchannel_desc": "Ställer in kanalen som loggar ska skickas till.",
+        "logchannel_opt_desc": "logga kanal",
+        "modrole_desc": "Ställer in auktoritetsrollen.",
+        "modrole_opt_desc": "Myndighetsroll",
+        "success": "{{type}} har ställts in på {{value}}.",
+        "error": "Ett fel uppstod när inställningen skulle sparas."
+      }
+    }
+  },
+  "info": {
+    "name": "Namn",
+    "id": "ID",
+    "created_at": "Skapandedatum",
+    "members": "Medlemmar",
+    "owner": "Ägare",
+    "roles": "Roller",
+    "joined_at": "Anslutningsdatum"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Meddelande raderat",
+      "description": "**Kanal:** {{kanal}}\n**Yazar:** {{författare}}\n**İçerik:** {{content}}"
+    },
+    "message_update": {
+      "title": "Meddelande redigerat",
+      "description": "**Kanal:** {{kanal}}\n**Yazar:** {{författare}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "Medlem gick med",
+      "description": "{{user}} gick med i servern. Totalt antal medlemmar: {{count}}"
+    },
+    "member_leave": {
+      "title": "Medlem vänster",
+      "description": "{{user}} har lämnat servern. Totalt antal medlemmar: {{count}}"
+    }
+  }
+}

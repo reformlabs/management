@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Kirjautunut sisään käyttäjänä {{user}}!",
+    "interaction_error": "Tätä komentoa suoritettaessa tapahtui virhe!",
+    "no_permission": "Sinulla ei ole tarvittavia käyttöoikeuksia tämän komennon käyttämiseen."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Mittaa botin latenssia.",
+        "response": "Pong! Gecikme: {{latency}} ms"
+      },
+      "serverinfo": {
+        "description": "Tarjoaa tietoja palvelimesta."
+      },
+      "userinfo": {
+        "description": "Tarjoaa tietoja käyttäjästä.",
+        "user_description": "Käyttäjä, jonka tiedot hankitaan"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Potkii käyttäjän palvelimelta.",
+        "user_desc": "Potkittava käyttäjä",
+        "reason_desc": "Karkotuksen syy",
+        "success": "{{user}} on poistettu palvelimelta onnistuneesti. Syy: {{reason}}",
+        "error": "Käyttäjää potkittaessa tapahtui virhe."
+      },
+      "ban": {
+        "description": "Estää käyttäjän palvelimelta.",
+        "user_desc": "Käyttäjä kiellettävä",
+        "reason_desc": "Syy kiellolle",
+        "delete_messages_desc": "Mesaj geçmişini sil (gün cinsinden)",
+        "success": "{{user}} başarıyla yasaklandı. Sebep: {{reason}}",
+        "error": "Kullanıcı yasaklanırken bir hata oluştu."
+      },
+      "unban": {
+        "description": "Poistaa käyttäjän porttikiellon.",
+        "id_desc": "Käyttäjätunnuksen esto poistetaan",
+        "success": "Käyttäjän, jonka tunnus on {{id}}, esto on poistettu.",
+        "error": "Käyttäjäkieltoa poistettaessa tapahtui virhe. Varmista, että tunnus on oikein."
+      },
+      "timeout": {
+        "description": "Aiheuttaa käyttäjälle hiljennysrangaistuksen.",
+        "user_desc": "Käyttäjä mykistettävä",
+        "duration_desc": "Kesto (minuuttia)",
+        "reason_desc": "Susturulma sebebi",
+        "success": "{{user}} on hiljennetty {{duration}} minuutiksi. Syy: {{reason}}",
+        "error": "Käyttäjän mykistyksen aikana tapahtui virhe."
+      },
+      "clear": {
+        "description": "Poistaa määritetyn määrän viestejä.",
+        "amount_desc": "Poistettavien viestien määrä (1-100)",
+        "success": "{{amount}} viesti poistettu onnistuneesti.",
+        "error": "Virhe poistettaessa viestejä."
+      },
+      "slowmode": {
+        "description": "Asettaa kanavan hitaan tilan keston.",
+        "duration_desc": "Kesto (sekuntia, 0 sammuu)",
+        "success": "Kanavan hidas tila on {{duration}} sekuntia.",
+        "error": "Virhe asetettaessa hidasta tilaa."
+      },
+      "lock": {
+        "description": "Sulkee kanavan viestin lähettämiseltä.",
+        "success": "Kanava on lukittu onnistuneesti.",
+        "error": "Kanavaa lukittaessa tapahtui virhe."
+      },
+      "unlock": {
+        "description": "Avaa kanavan lukituksen.",
+        "success": "Kanavan lukitus on avattu.",
+        "error": "Kanavan lukitusta avattaessa tapahtui virhe."
+      },
+      "setup": {
+        "description": "Konfiguroi palvelimen asetukset.",
+        "logchannel_desc": "Asettaa kanavan, johon lokit lähetetään.",
+        "logchannel_opt_desc": "lokikanava",
+        "modrole_desc": "Asettaa auktoriteetin roolin.",
+        "modrole_opt_desc": "Auktoriteettirooli",
+        "success": "{{type}} asetettiin arvoon {{value}}.",
+        "error": "Asetusta tallennettaessa tapahtui virhe."
+      }
+    }
+  },
+  "info": {
+    "name": "Nimi",
+    "id": "ID",
+    "created_at": "Luontipäivämäärä",
+    "members": "jäsenet",
+    "owner": "Omistaja",
+    "roles": "Rulla",
+    "joined_at": "Liittymispäivämäärä"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Viesti poistettu",
+      "description": "**Kanal:** {{kanava}}\n**Yazar:** {{author}}\n**İçerik:** {{content}}"
+    },
+    "message_update": {
+      "title": "Viestiä muokattu",
+      "description": "**Kanal:** {{kanava}}\n**Yazar:** {{author}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{uusi sisältö}}"
+    },
+    "member_join": {
+      "title": "Jäsen liittynyt",
+      "description": "{{user}} liittyi palvelimeen. Jäseniä yhteensä: {{count}}"
+    },
+    "member_leave": {
+      "title": "Jäsen vasen",
+      "description": "{{user}} on poistunut palvelimelta. Jäseniä yhteensä: {{count}}"
+    }
+  }
+}

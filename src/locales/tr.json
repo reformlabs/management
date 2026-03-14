@@ -1,0 +1,111 @@
+{
+    "system": {
+        "ready_log": "{{user}} olarak giriş yapıldı!",
+        "interaction_error": "Bu komutu çalıştırırken bir hata oluştu!",
+        "no_permission": "Bu komutu kullanmak için gerekli yetkiniz yok."
+    },
+    "commands": {
+        "utility": {
+            "ping": {
+                "description": "Botun gecikmesini ölçer.",
+                "response": "Pong! Gecikme: {{latency}}ms"
+            },
+            "serverinfo": {
+                "description": "Sunucu hakkında bilgi verir."
+            },
+            "userinfo": {
+                "description": "Bir kullanıcı hakkında bilgi verir.",
+                "user_description": "Bilgisi alınacak kullanıcı"
+            }
+        },
+        "moderation": {
+            "kick": {
+                "description": "Bir kullanıcıyı sunucudan atar.",
+                "user_desc": "Atılacak kullanıcı",
+                "reason_desc": "Atılma sebebi",
+                "success": "{{user}} başarıyla sunucudan atıldı. Sebep: {{reason}}",
+                "error": "Kullanıcı atılırken bir hata oluştu."
+            },
+            "ban": {
+                "description": "Bir kullanıcıyı sunucudan yasaklar.",
+                "user_desc": "Yasaklanacak kullanıcı",
+                "reason_desc": "Yasaklanma sebebi",
+                "delete_messages_desc": "Mesaj geçmişini sil (gün cinsinden)",
+                "success": "{{user}} başarıyla yasaklandı. Sebep: {{reason}}",
+                "error": "Kullanıcı yasaklanırken bir hata oluştu."
+            },
+            "unban": {
+                "description": "Bir kullanıcının yasaklamasını kaldırır.",
+                "id_desc": "Yasağı kaldırılacak kullanıcı ID'si",
+                "success": "ID'si {{id}} olan kullanıcının yasağı başarıyla kaldırıldı.",
+                "error": "Kullanıcı yasağı kaldırılırken bir hata oluştu. ID'nin doğru olduğundan emin olun."
+            },
+            "timeout": {
+                "description": "Bir kullanıcıya susturma cezası verir.",
+                "user_desc": "Susturulacak kullanıcı",
+                "duration_desc": "Süre (dakika)",
+                "reason_desc": "Susturulma sebebi",
+                "success": "{{user}} {{duration}} dakika boyunca susturuldu. Sebep: {{reason}}",
+                "error": "Kullanıcı susturulurken bir hata oluştu."
+            },
+            "clear": {
+                "description": "Belirtilen miktarda mesajı siler.",
+                "amount_desc": "Silinecek mesaj sayısı (1-100)",
+                "success": "{{amount}} mesaj başarıyla silindi.",
+                "error": "Mesajlar silinirken bir hata oluştu."
+            },
+            "slowmode": {
+                "description": "Kanalın yavaş mod süresini ayarlar.",
+                "duration_desc": "Süre (saniye, 0 kapatır)",
+                "success": "Kanal yavaş modu {{duration}} saniye olarak ayarlandı.",
+                "error": "Yavaş mod ayarlanırken bir hata oluştu."
+            },
+            "lock": {
+                "description": "Kanalı mesaj gönderimine kapatır.",
+                "success": "Kanal başarıyla kilitlendi.",
+                "error": "Kanal kilitlenirken bir hata oluştu."
+            },
+            "unlock": {
+                "description": "Kanalın kilidini açar.",
+                "success": "Kanalın kilidi başarıyla açıldı.",
+                "error": "Kanal kilidi açılırken bir hata oluştu."
+            },
+            "setup": {
+                "description": "Sunucu ayarlarını yapılandırır.",
+                "logchannel_desc": "Logların gönderileceği kanalı ayarlar.",
+                "logchannel_opt_desc": "Log kanalı",
+                "modrole_desc": "Yetkili rolünü ayarlar.",
+                "modrole_opt_desc": "Yetkili rolü",
+                "success": "{{type}} başarıyla {{value}} olarak ayarlandı.",
+                "error": "Ayar kaydedilirken bir hata oluştu."
+            }
+        }
+    },
+    "info": {
+        "name": "İsim",
+        "id": "ID",
+        "created_at": "Oluşturulma Tarihi",
+        "members": "Üyeler",
+        "owner": "Sahip",
+        "roles": "Roller",
+        "joined_at": "Katılma Tarihi"
+    },
+    "logs": {
+        "message_delete": {
+            "title": "Mesaj Silindi",
+            "description": "**Kanal:** {{channel}}\n**Yazar:** {{author}}\n**İçerik:** {{content}}"
+        },
+        "message_update": {
+            "title": "Mesaj Düzenlendi",
+            "description": "**Kanal:** {{channel}}\n**Yazar:** {{author}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+        },
+        "member_join": {
+            "title": "Üye Katıldı",
+            "description": "{{user}} sunucuya katıldı. Toplam üye: {{count}}"
+        },
+        "member_leave": {
+            "title": "Üye Ayrıldı",
+            "description": "{{user}} sunucudan ayrıldı. Toplam üye: {{count}}"
+        }
+    }
+}

@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Connecté en tant que {{user}} !",
+    "interaction_error": "Une erreur s'est produite lors de l'exécution de cette commande !",
+    "no_permission": "Bu komutu kullanmak için gerekli yetkiniz yok."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Mesure la latence du bot.",
+        "response": "Pong ! Temps : {{latency}} ms"
+      },
+      "serverinfo": {
+        "description": "Fournit des informations sur le serveur."
+      },
+      "userinfo": {
+        "description": "Fournit des informations sur un utilisateur.",
+        "user_description": "Utilisateur dont les informations seront obtenues"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Bir kullanıcıyı sunucudan atar.",
+        "user_desc": "Utilisateur à expulser",
+        "reason_desc": "Motif de l'expulsion",
+        "success": "{{user}} a été expulsé avec succès du serveur. Raison : {{raison}}",
+        "error": "Une erreur s'est produite lors du kick de l'utilisateur."
+      },
+      "ban": {
+        "description": "Interdit un utilisateur du serveur.",
+        "user_desc": "Utilisateur à bannir",
+        "reason_desc": "Raison de l'interdiction",
+        "delete_messages_desc": "Supprimer l'historique des messages (en jours)",
+        "success": "{{user}} a été banni avec succès. Raison : {{raison}}",
+        "error": "Une erreur s'est produite lors du bannissement de l'utilisateur."
+      },
+      "unban": {
+        "description": "Débannit un utilisateur.",
+        "id_desc": "ID utilisateur à débannir",
+        "success": "Le bannissement de l'utilisateur avec l'ID {{id}} a été supprimé avec succès.",
+        "error": "Une erreur s'est produite lors de la suppression de l'interdiction d'utilisateur. Assurez-vous que l'identifiant est correct."
+      },
+      "timeout": {
+        "description": "Inflige une pénalité de mise au silence à un utilisateur.",
+        "user_desc": "Utilisateur à désactiver",
+        "duration_desc": "Durée (minutes)",
+        "reason_desc": "Raison du silence",
+        "success": "{{user}} a été réduit au silence pendant {{duration}} minutes. Raison : {{raison}}",
+        "error": "Une erreur s'est produite lors de la mise en sourdine de l'utilisateur."
+      },
+      "clear": {
+        "description": "Supprime le nombre spécifié de messages.",
+        "amount_desc": "Nombre de messages à supprimer (1-100)",
+        "success": "{{amount}} message supprimé avec succès.",
+        "error": "Une erreur s'est produite lors de la suppression des messages."
+      },
+      "slowmode": {
+        "description": "Définit la durée du mode lent du canal.",
+        "duration_desc": "Durée (secondes, 0 s'éteint)",
+        "success": "Le mode lent de la chaîne est réglé sur {{duration}} secondes.",
+        "error": "Une erreur s'est produite lors du réglage du mode lent."
+      },
+      "lock": {
+        "description": "Ferme le canal pour l'envoi de messages.",
+        "success": "La chaîne a été verrouillée avec succès.",
+        "error": "Une erreur s'est produite lors du verrouillage de la chaîne."
+      },
+      "unlock": {
+        "description": "Déverrouille la chaîne.",
+        "success": "La chaîne a été déverrouillée avec succès.",
+        "error": "Une erreur s'est produite lors du déverrouillage de la chaîne."
+      },
+      "setup": {
+        "description": "Configure les paramètres du serveur.",
+        "logchannel_desc": "Définit le canal auquel les journaux seront envoyés.",
+        "logchannel_opt_desc": "canal de journalisation",
+        "modrole_desc": "Définit le rôle d'autorité.",
+        "modrole_opt_desc": "Rôle d'autorité",
+        "success": "{{type}} défini avec succès sur {{value}}.",
+        "error": "Une erreur s'est produite lors de l'enregistrement du paramètre."
+      }
+    }
+  },
+  "info": {
+    "name": "Nom",
+    "id": "IDENTIFIANT",
+    "created_at": "Date de création",
+    "members": "Membres",
+    "owner": "Propriétaire",
+    "roles": "Rouleau",
+    "joined_at": "Date d'adhésion"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Message supprimé",
+      "description": "**Kanal:** {{chaîne}}\n**Yazar:** {{auteur}}\n**İçerik:** {{content}}"
+    },
+    "message_update": {
+      "title": "Message modifié",
+      "description": "**Kanal:** {{chaîne}}\n**Yazar:** {{auteur}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "Membre rejoint",
+      "description": "{{user}} a rejoint le serveur. Nombre total de membres : {{count}}"
+    },
+    "member_leave": {
+      "title": "Membre gauche",
+      "description": "{{user}} a quitté le serveur. Nombre total de membres : {{count}}"
+    }
+  }
+}

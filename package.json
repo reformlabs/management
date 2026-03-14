@@ -1,0 +1,30 @@
+{
+  "name": "base-dts",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && xcopy /E /I /Y src\\locales dist\\locales",
+    "start": "node --no-warnings dist/index.js",
+    "dev": "node --no-warnings --loader ts-node/esm src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@reformlabs/qlit": "^3.0.0",
+    "discord.js": "^14.25.1",
+    "dotenv": "^17.3.1",
+    "i18next": "^25.8.18",
+    "i18next-fs-backend": "^2.6.1",
+    "mongoose": "^9.3.0"
+  },
+  "devDependencies": {
+    "@types/i18next-fs-backend": "^1.1.5",
+    "@types/node": "^25.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Prijavljeni ste kao {{user}}!",
+    "interaction_error": "Došlo je do pogreške prilikom izvođenja ove naredbe!",
+    "no_permission": "Nemate potrebna dopuštenja za korištenje ove naredbe."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Mjeri latenciju bota.",
+        "response": "tenis! Gecikme: {{latency}}ms"
+      },
+      "serverinfo": {
+        "description": "Pruža informacije o poslužitelju."
+      },
+      "userinfo": {
+        "description": "Pruža informacije o korisniku.",
+        "user_description": "Korisnik čiji će se podaci dobiti"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Izbacuje korisnika s poslužitelja.",
+        "user_desc": "Korisnik koji će biti izbačen",
+        "reason_desc": "Razlog izbacivanja",
+        "success": "{{user}} je uspješno izbačen s poslužitelja. Razlog: {{reason}}",
+        "error": "Došlo je do pogreške prilikom izbacivanja korisnika."
+      },
+      "ban": {
+        "description": "Zabranjuje korisniku pristup poslužitelju.",
+        "user_desc": "Korisnik za ban",
+        "reason_desc": "Razlog zabrane",
+        "delete_messages_desc": "Brisanje povijesti poruka (u danima)",
+        "success": "{{user}} je uspješno zabranjen. Razlog: {{reason}}",
+        "error": "Došlo je do pogreške prilikom zabrane korisnika."
+      },
+      "unban": {
+        "description": "Poništava zabranu korisnika.",
+        "id_desc": "Korisnički ID za poništenje zabrane",
+        "success": "Zabrana korisnika s ID-om {{id}} je uspješno uklonjena.",
+        "error": "Došlo je do pogreške prilikom uklanjanja korisničke zabrane. Provjerite je li ID točan."
+      },
+      "timeout": {
+        "description": "Nametne korisniku kaznu utišavanja.",
+        "user_desc": "Korisnik za isključivanje zvuka",
+        "duration_desc": "Trajanje (minute)",
+        "reason_desc": "Razlog za šutnju",
+        "success": "{{user}} je utišan na {{duration}} minuta. Razlog: {{reason}}",
+        "error": "Došlo je do pogreške prilikom isključivanja zvuka korisnika."
+      },
+      "clear": {
+        "description": "Briše navedenu količinu poruka.",
+        "amount_desc": "Broj poruka za brisanje (1-100)",
+        "success": "{{amount}} poruka uspješno izbrisana.",
+        "error": "Došlo je do pogreške prilikom brisanja poruka."
+      },
+      "slowmode": {
+        "description": "Postavlja trajanje usporenog načina rada kanala.",
+        "duration_desc": "Trajanje (sekunde, 0 se isključuje)",
+        "success": "Spori način rada kanala postavljen je na {{duration}} sekundi.",
+        "error": "Došlo je do pogreške prilikom postavljanja sporog načina rada."
+      },
+      "lock": {
+        "description": "Zatvara kanal za slanje poruka.",
+        "success": "Kanal je uspješno zaključan.",
+        "error": "Došlo je do pogreške prilikom zaključavanja kanala."
+      },
+      "unlock": {
+        "description": "Otključava kanal.",
+        "success": "Kanal je uspješno otključan.",
+        "error": "Došlo je do greške prilikom otključavanja kanala."
+      },
+      "setup": {
+        "description": "Konfigurira postavke poslužitelja.",
+        "logchannel_desc": "Postavlja kanal na koji će se slati zapisnici.",
+        "logchannel_opt_desc": "log kanal",
+        "modrole_desc": "Postavlja ulogu autoriteta.",
+        "modrole_opt_desc": "Uloga autoriteta",
+        "success": "{{type}} uspješno postavljen na {{value}}.",
+        "error": "Došlo je do pogreške prilikom spremanja postavke."
+      }
+    }
+  },
+  "info": {
+    "name": "Ime",
+    "id": "ID",
+    "created_at": "Datum stvaranja",
+    "members": "članovi",
+    "owner": "Vlasnik",
+    "roles": "Valjak",
+    "joined_at": "Datum pridruživanja"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Poruka izbrisana",
+      "description": "**Kanal:** {{kanal}}\n**Yazar:** {{autor}}\n**İçerik:** {{sadržaj}}"
+    },
+    "message_update": {
+      "title": "Poruka uređena",
+      "description": "**Kanal:** {{kanal}}\n**Yazar:** {{autor}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "Član se pridružio",
+      "description": "{{user}} se pridružio poslužitelju. Ukupno članova: {{count}}"
+    },
+    "member_leave": {
+      "title": "Član lijevo",
+      "description": "{{user}} je napustio poslužitelj. Ukupno članova: {{count}}"
+    }
+  }
+}

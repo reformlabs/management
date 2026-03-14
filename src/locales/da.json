@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Logget ind som {{bruger}}!",
+    "interaction_error": "Der opstod en fejl under kørsel af denne kommando!",
+    "no_permission": "Du har ikke de nødvendige tilladelser til at bruge denne kommando."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Måler bottens latenstid.",
+        "response": "Pong! Gecikme: {{latency}}ms"
+      },
+      "serverinfo": {
+        "description": "Giver information om serveren."
+      },
+      "userinfo": {
+        "description": "Giver oplysninger om en bruger.",
+        "user_description": "Bruger, hvis oplysninger vil blive indhentet"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Sparker en bruger fra serveren.",
+        "user_desc": "Atılacak kullanıcı",
+        "reason_desc": "Årsag til bortvisning",
+        "success": "{{user}} başarıyla sunucudan atıldı. Sebep: {{reason}}",
+        "error": "Der opstod en fejl under spark af brugeren."
+      },
+      "ban": {
+        "description": "Udelukker en bruger fra serveren.",
+        "user_desc": "Bruger forbydes",
+        "reason_desc": "Årsag til forbud",
+        "delete_messages_desc": "Slet beskedhistorik (i dage)",
+        "success": "{{user}} er blevet udelukket. Årsag: {{reason}}",
+        "error": "Der opstod en fejl under udelukkelse af brugeren."
+      },
+      "unban": {
+        "description": "Ophæver forbuddet for en bruger.",
+        "id_desc": "Yasağı kaldırılacak kullanıcı ID'si",
+        "success": "Spærringen af ​​brugeren med ID {{id}} er blevet fjernet.",
+        "error": "Der opstod en fejl under fjernelse af brugerforbuddet. Sørg for, at ID'et er korrekt."
+      },
+      "timeout": {
+        "description": "Påfører en bruger en tavshedsstraf.",
+        "user_desc": "Bruger til at slå lyden fra",
+        "duration_desc": "Varighed (minutter)",
+        "reason_desc": "Grund til tavshed",
+        "success": "{{user}} {{duration}} dakika boyunca susturuldu. Sebep: {{reason}}",
+        "error": "Der opstod en fejl under ignorering af brugeren."
+      },
+      "clear": {
+        "description": "Sletter det angivne antal beskeder.",
+        "amount_desc": "Antal beskeder, der skal slettes (1-100)",
+        "success": "Meddelelsen {{amount}} blev slettet.",
+        "error": "Der opstod en fejl under sletning af meddelelser."
+      },
+      "slowmode": {
+        "description": "Indstiller varigheden af ​​kanalens langsom tilstand.",
+        "duration_desc": "Varighed (sekunder, 0 slukker)",
+        "success": "Kanalens langsom tilstand er indstillet til {{duration}} sekunder.",
+        "error": "Der opstod en fejl under indstilling af langsom tilstand."
+      },
+      "lock": {
+        "description": "Lukker kanalen for afsendelse af beskeder.",
+        "success": "Kanalen er blevet låst.",
+        "error": "Der opstod en fejl under låsning af kanalen."
+      },
+      "unlock": {
+        "description": "Låser kanalen op.",
+        "success": "Kanalen er blevet låst op.",
+        "error": "Der opstod en fejl under oplåsning af kanalen."
+      },
+      "setup": {
+        "description": "Konfigurerer serverindstillinger.",
+        "logchannel_desc": "Indstiller den kanal, som logfiler sendes til.",
+        "logchannel_opt_desc": "log kanal",
+        "modrole_desc": "Sætter myndighedsrollen.",
+        "modrole_opt_desc": "Myndighedsrolle",
+        "success": "{{type}} blev indstillet til {{value}}.",
+        "error": "Der opstod en fejl under lagring af indstillingen."
+      }
+    }
+  },
+  "info": {
+    "name": "Navn",
+    "id": "ID",
+    "created_at": "Oprettelsesdato",
+    "members": "Medlemmer",
+    "owner": "Ejer",
+    "roles": "Rulle",
+    "joined_at": "Tilmeldingsdato"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Besked slettet",
+      "description": "**Kanal:** {{kanal}}\n**Yazar:** {{forfatter}}\n**İçerik:** {{indhold}}"
+    },
+    "message_update": {
+      "title": "Besked redigeret",
+      "description": "**Kanal:** {{kanal}}\n**Yazar:** {{forfatter}}\n**Eski İçerik:** {{gammelt indhold}}\n**Yeni İçerik:** {{nyt indhold}}"
+    },
+    "member_join": {
+      "title": "Medlem tiltrådt",
+      "description": "{{user}} sluttede sig til serveren. Samlet antal medlemmer: {{count}}"
+    },
+    "member_leave": {
+      "title": "Medlem til venstre",
+      "description": "{{user}} har forladt serveren. Samlet antal medlemmer: {{count}}"
+    }
+  }
+}

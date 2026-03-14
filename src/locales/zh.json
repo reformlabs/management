@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "以 {{user}} 身份登录！",
+    "interaction_error": "运行此命令时发生错误！",
+    "no_permission": "您没有使用此命令所需的权限。"
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "测量机器人的延迟。",
+        "response": "乒！时间：{{延迟}}毫秒"
+      },
+      "serverinfo": {
+        "description": "提供有关服务器的信息。"
+      },
+      "userinfo": {
+        "description": "提供有关用户的信息。",
+        "user_description": "将被获取信息的用户"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "从服务器中踢出用户。",
+        "user_desc": "被踢出的用户",
+        "reason_desc": "开除原因",
+        "success": "{{user}} 已成功从服务器中踢出。原因：{{原因}}",
+        "error": "踢用户时发生错误。"
+      },
+      "ban": {
+        "description": "禁止用户访问服务器。",
+        "user_desc": "禁止的用户",
+        "reason_desc": "禁令原因",
+        "delete_messages_desc": "删除消息历史记录（以天为单位）",
+        "success": "{{user}} 已成功被禁止。原因：{{原因}}",
+        "error": "禁止用户时发生错误。"
+      },
+      "unban": {
+        "description": "取消禁止用户。",
+        "id_desc": "待解封的用户ID",
+        "success": "ID 为 {{id}} 的用户的禁令已成功解除。",
+        "error": "删除用户禁令时发生错误。确保 ID 正确。"
+      },
+      "timeout": {
+        "description": "对用户造成沉默惩罚。",
+        "user_desc": "用户静音",
+        "duration_desc": "持续时间（分钟）",
+        "reason_desc": "沉默的原因",
+        "success": "{{user}} 已被静音 {{duration}} 分钟。原因：{{原因}}",
+        "error": "将用户静音时发生错误。"
+      },
+      "clear": {
+        "description": "删除指定数量的消息。",
+        "amount_desc": "要删除的消息数 (1-100)",
+        "success": "{{amount}} 条消息已成功删除。",
+        "error": "删除消息时出错。"
+      },
+      "slowmode": {
+        "description": "设置通道的慢速模式持续时间。",
+        "duration_desc": "持续时间（秒，0 关闭）",
+        "success": "频道慢速模式设置为 {{duration}} 秒。",
+        "error": "设置慢速模式时出错。"
+      },
+      "lock": {
+        "description": "关闭消息发送通道。",
+        "success": "频道已成功锁定。",
+        "error": "锁定频道时发生错误。"
+      },
+      "unlock": {
+        "description": "解锁频道。",
+        "success": "频道已解锁成功。",
+        "error": "解锁通道时发生错误。"
+      },
+      "setup": {
+        "description": "配置服务器设置。",
+        "logchannel_desc": "设置日志发送的通道。",
+        "logchannel_opt_desc": "日志通道",
+        "modrole_desc": "设置权限角色。",
+        "modrole_opt_desc": "权威角色",
+        "success": "{{type}} 成功设置为 {{value}}。",
+        "error": "保存设置时出错。"
+      }
+    }
+  },
+  "info": {
+    "name": "姓名",
+    "id": "ID",
+    "created_at": "创建日期",
+    "members": "会员",
+    "owner": "所有者",
+    "roles": "滚筒",
+    "joined_at": "加入日期"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "消息已删除",
+      "description": "**Kanal:** {{频道}}\n**Yazar:** {{作者}}\n**İçerik:** {{内容}}"
+    },
+    "message_update": {
+      "title": "消息已编辑",
+      "description": "**Kanal:** {{频道}}\n**Yazar:** {{作者}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "会员已加入",
+      "description": "{{user}} 加入了服务器。成员总数：{{count}}"
+    },
+    "member_leave": {
+      "title": "会员离开",
+      "description": "{{user}} 已离开服务器。成员总数：{{count}}"
+    }
+  }
+}

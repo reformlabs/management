@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Jste přihlášeni jako {{user}}!",
+    "interaction_error": "Při spouštění tohoto příkazu došlo k chybě!",
+    "no_permission": "K použití tohoto příkazu nemáte potřebná oprávnění."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Měří latenci robota.",
+        "response": "Pong! Gecikme: {{latency}}ms"
+      },
+      "serverinfo": {
+        "description": "Poskytuje informace o serveru."
+      },
+      "userinfo": {
+        "description": "Poskytuje informace o uživateli.",
+        "user_description": "Bilgisi alınacak kullanıcı"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Vykopne uživatele ze serveru.",
+        "user_desc": "Uživatel, který má být vyhozen",
+        "reason_desc": "Důvod vyloučení",
+        "success": "{{user}} byl úspěšně spuštěn ze serveru. Důvod: {{reason}}",
+        "error": "Kullanıcı atılırken bir hata oluştu."
+      },
+      "ban": {
+        "description": "Zakáže uživateli přístup na server.",
+        "user_desc": "Uživatel k zákazu",
+        "reason_desc": "Důvod zákazu",
+        "delete_messages_desc": "Mesaj geçmişini sil (gün cinsinden)",
+        "success": "{{user}} byl úspěšně zakázán. Důvod: {{reason}}",
+        "error": "Při zakazování uživatele došlo k chybě."
+      },
+      "unban": {
+        "description": "Zruší zákaz uživatele.",
+        "id_desc": "ID uživatele má být zrušeno",
+        "success": "Zákaz uživatele s ID {{id}} byl úspěšně odstraněn.",
+        "error": "Při odstraňování zákazu uživatele došlo k chybě. Ujistěte se, že je ID správné."
+      },
+      "timeout": {
+        "description": "Uděluje uživateli trest za umlčení.",
+        "user_desc": "Uživatel ke ztlumení",
+        "duration_desc": "Doba trvání (minuty)",
+        "reason_desc": "Důvod k mlčení",
+        "success": "{{user}} byl umlčen na {{duration}} minut. Důvod: {{reason}}",
+        "error": "Při ztlumení uživatele došlo k chybě."
+      },
+      "clear": {
+        "description": "Odstraní zadané množství zpráv.",
+        "amount_desc": "Počet zpráv ke smazání (1–100)",
+        "success": "Zpráva {{amount}} byla úspěšně smazána.",
+        "error": "Při mazání zpráv došlo k chybě."
+      },
+      "slowmode": {
+        "description": "Nastavuje dobu trvání pomalého režimu kanálu.",
+        "duration_desc": "Doba trvání (sekundy, 0 se vypne)",
+        "success": "Pomalý režim kanálu je nastaven na {{duration}} sekund.",
+        "error": "Při nastavování pomalého režimu došlo k chybě."
+      },
+      "lock": {
+        "description": "Uzavře kanál pro odesílání zpráv.",
+        "success": "Kanál byl úspěšně uzamčen.",
+        "error": "Při zamykání kanálu došlo k chybě."
+      },
+      "unlock": {
+        "description": "Odemkne kanál.",
+        "success": "Kanál byl úspěšně odemčen.",
+        "error": "Při odemykání kanálu došlo k chybě."
+      },
+      "setup": {
+        "description": "Konfiguruje nastavení serveru.",
+        "logchannel_desc": "Nastavuje kanál, na který budou zasílány protokoly.",
+        "logchannel_opt_desc": "log kanál",
+        "modrole_desc": "Nastavuje roli autority.",
+        "modrole_opt_desc": "Role autority",
+        "success": "{{type}} úspěšně nastaveno na {{value}}.",
+        "error": "Při ukládání nastavení došlo k chybě."
+      }
+    }
+  },
+  "info": {
+    "name": "Jméno",
+    "id": "ID",
+    "created_at": "Datum vytvoření",
+    "members": "členové",
+    "owner": "Majitel",
+    "roles": "Váleček",
+    "joined_at": "Datum připojení"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Zpráva smazána",
+      "description": "**Kanal:** {{kanál}}\n**Yazar:** {{author}}\n**İçerik:** {{content}}"
+    },
+    "message_update": {
+      "title": "Zpráva upravena",
+      "description": "**Kanal:** {{kanál}}\n**Yazar:** {{author}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "Člen se připojil",
+      "description": "{{user}} se připojil k serveru. Celkový počet členů: {{count}}"
+    },
+    "member_leave": {
+      "title": "Člen vlevo",
+      "description": "{{user}} opustil server. Celkový počet členů: {{count}}"
+    }
+  }
+}

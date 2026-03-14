@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Logget på som {{user}}!",
+    "interaction_error": "Det oppstod en feil under kjøring av denne kommandoen!",
+    "no_permission": "Du har ikke de nødvendige tillatelsene til å bruke denne kommandoen."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Måler botens latens.",
+        "response": "Pong! Gecikme: {{latency}}ms"
+      },
+      "serverinfo": {
+        "description": "Sunucu hakkında bilgi verir."
+      },
+      "userinfo": {
+        "description": "Gir informasjon om en bruker.",
+        "user_description": "Bilgisi alınacak kullanıcı"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Bir kullanıcıyı sunucudan atar.",
+        "user_desc": "Bruker som skal sparkes",
+        "reason_desc": "Årsak til utvisning",
+        "success": "{{user}} başarıyla sunucudan atıldı. Sebep: {{reason}}",
+        "error": "Kullanıcı atılırken bir hata oluştu."
+      },
+      "ban": {
+        "description": "Sperrer en bruker fra serveren.",
+        "user_desc": "Yasaklanacak kullanıcı",
+        "reason_desc": "Årsak til forbud",
+        "delete_messages_desc": "Slett meldingshistorikk (i dager)",
+        "success": "{{user}} başarıyla yasaklandı. Sebep: {{reason}}",
+        "error": "Kullanıcı yasaklanırken bir hata oluştu."
+      },
+      "unban": {
+        "description": "Opphever utestengelsen av en bruker.",
+        "id_desc": "Bruker-ID skal oppheves",
+        "success": "Sperringen av brukeren med ID {{id}} er fjernet.",
+        "error": "Det oppsto en feil under fjerning av brukerforbudet. Kontroller at ID-en er riktig."
+      },
+      "timeout": {
+        "description": "Bir kullanıcıya susturma cezası verir.",
+        "user_desc": "Bruker for å dempe",
+        "duration_desc": "Varighet (minutter)",
+        "reason_desc": "Susturulma sebebi",
+        "success": "{{user}} har blitt lydløst i {{duration}} minutter. Årsak: {{reason}}",
+        "error": "Det oppsto en feil under kutting av brukeren."
+      },
+      "clear": {
+        "description": "Sletter den angitte mengden meldinger.",
+        "amount_desc": "Antall meldinger å slette (1–100)",
+        "success": "Meldingen {{amount}} ble slettet.",
+        "error": "Det oppstod en feil under sletting av meldinger."
+      },
+      "slowmode": {
+        "description": "Stiller inn varigheten i sakte modus for kanalen.",
+        "duration_desc": "Varighet (sekunder, 0 slår av)",
+        "success": "Kanalens sakte modus er satt til {{duration}} sekunder.",
+        "error": "Det oppstod en feil under innstilling av sakte modus."
+      },
+      "lock": {
+        "description": "Lukker kanalen for meldingssending.",
+        "success": "Kanalen har blitt låst.",
+        "error": "Det oppstod en feil under låsing av kanalen."
+      },
+      "unlock": {
+        "description": "Kanalın kilidini açar.",
+        "success": "Kanalen har blitt låst opp.",
+        "error": "Kanal kilidi açılırken bir hata oluştu."
+      },
+      "setup": {
+        "description": "Konfigurerer serverinnstillinger.",
+        "logchannel_desc": "Angir kanalen som logger skal sendes til.",
+        "logchannel_opt_desc": "Log kanalı",
+        "modrole_desc": "Angir autoritetsrollen.",
+        "modrole_opt_desc": "Myndighetsrolle",
+        "success": "{{type}} ble satt til {{value}}.",
+        "error": "Det oppstod en feil under lagring av innstillingen."
+      }
+    }
+  },
+  "info": {
+    "name": "Navn",
+    "id": "ID",
+    "created_at": "Opprettelsesdato",
+    "members": "Medlemmer",
+    "owner": "Eier",
+    "roles": "Rulle",
+    "joined_at": "Tilmeldingsdato"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Melding slettet",
+      "description": "**Kanal:** {{kanal}}\n**Yazar:** {{forfatter}}\n**İçerik:** {{innhold}}"
+    },
+    "message_update": {
+      "title": "Melding redigert",
+      "description": "**Kanal:** {{kanal}}\n**Yazar:** {{forfatter}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "Medlem ble med",
+      "description": "{{user}} ble med på serveren. Totalt antall medlemmer: {{count}}"
+    },
+    "member_leave": {
+      "title": "Medlem til venstre",
+      "description": "{{user}} har forlatt serveren. Totalt antall medlemmer: {{count}}"
+    }
+  }
+}

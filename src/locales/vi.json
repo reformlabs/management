@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Đã đăng nhập với tư cách {{user}}!",
+    "interaction_error": "Đã xảy ra lỗi khi chạy lệnh này!",
+    "no_permission": "Bạn không có quyền cần thiết để sử dụng lệnh này."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Đo độ trễ của bot.",
+        "response": "Bàng! Thời gian: {{latency}}ms"
+      },
+      "serverinfo": {
+        "description": "Cung cấp thông tin về máy chủ."
+      },
+      "userinfo": {
+        "description": "Cung cấp thông tin về một người dùng.",
+        "user_description": "Người dùng có thông tin sẽ được lấy"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Đá một người dùng khỏi máy chủ.",
+        "user_desc": "Người dùng bị đá",
+        "reason_desc": "Lý do bị đuổi học",
+        "success": "{{user}} đã được khởi động khỏi máy chủ thành công. Lý do: {{lý do}}",
+        "error": "Đã xảy ra lỗi khi đá người dùng."
+      },
+      "ban": {
+        "description": "Cấm người dùng khỏi máy chủ.",
+        "user_desc": "Người dùng bị cấm",
+        "reason_desc": "Lý do cấm",
+        "delete_messages_desc": "Xóa lịch sử tin nhắn (theo ngày)",
+        "success": "{{user}} đã bị cấm thành công. Lý do: {{lý do}}",
+        "error": "Đã xảy ra lỗi khi cấm người dùng."
+      },
+      "unban": {
+        "description": "Bỏ cấm một người dùng.",
+        "id_desc": "ID người dùng sẽ được bỏ cấm",
+        "success": "Lệnh cấm người dùng có ID {{id}} đã được xóa thành công.",
+        "error": "Đã xảy ra lỗi khi xóa lệnh cấm người dùng. Hãy chắc chắn rằng ID là chính xác."
+      },
+      "timeout": {
+        "description": "Gây ra hình phạt im lặng đối với người dùng.",
+        "user_desc": "Người dùng tắt tiếng",
+        "duration_desc": "Thời lượng (phút)",
+        "reason_desc": "Lý do im lặng",
+        "success": "{{user}} đã bị tắt tiếng trong {{duration}} phút. Lý do: {{lý do}}",
+        "error": "Đã xảy ra lỗi khi tắt tiếng người dùng."
+      },
+      "clear": {
+        "description": "Xóa số lượng tin nhắn được chỉ định.",
+        "amount_desc": "Số tin nhắn cần xóa (1-100)",
+        "success": "{{amount}} tin nhắn đã được xóa thành công.",
+        "error": "Đã xảy ra lỗi khi xóa tin nhắn."
+      },
+      "slowmode": {
+        "description": "Đặt thời lượng chế độ chậm của kênh.",
+        "duration_desc": "Thời lượng (giây, 0 tắt)",
+        "success": "Chế độ chậm kênh được đặt thành {{duration}} giây.",
+        "error": "Đã xảy ra lỗi khi cài đặt chế độ chậm."
+      },
+      "lock": {
+        "description": "Đóng kênh để gửi tin nhắn.",
+        "success": "Kênh đã được khóa thành công.",
+        "error": "Đã xảy ra lỗi khi khóa kênh."
+      },
+      "unlock": {
+        "description": "Mở khóa kênh.",
+        "success": "Kênh đã được mở khóa thành công.",
+        "error": "Đã xảy ra lỗi khi mở khóa kênh."
+      },
+      "setup": {
+        "description": "Định cấu hình cài đặt máy chủ.",
+        "logchannel_desc": "Đặt kênh mà nhật ký sẽ được gửi tới.",
+        "logchannel_opt_desc": "kênh đăng nhập",
+        "modrole_desc": "Đặt vai trò thẩm quyền.",
+        "modrole_opt_desc": "Vai trò của cơ quan có thẩm quyền",
+        "success": "{{type}} được đặt thành công thành {{value}}.",
+        "error": "Đã xảy ra lỗi khi lưu cài đặt."
+      }
+    }
+  },
+  "info": {
+    "name": "Tên",
+    "id": "NHẬN DẠNG",
+    "created_at": "Ngày tạo",
+    "members": "Thành viên",
+    "owner": "Người sở hữu",
+    "roles": "Con lăn",
+    "joined_at": "Ngày tham gia"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Đã xóa tin nhắn",
+      "description": "**Kanal:** {{channel}}\n[[BẢO VỆ_1]] {{tác giả}}\n**İçerik:** {{content}}"
+    },
+    "message_update": {
+      "title": "Tin nhắn đã được chỉnh sửa",
+      "description": "**Kanal:** {{channel}}\n[[BẢO VỆ_1]] {{tác giả}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "Thành viên đã tham gia",
+      "description": "{{user}} đã tham gia máy chủ. Tổng số thành viên: {{count}}"
+    },
+    "member_leave": {
+      "title": "Thành viên còn lại",
+      "description": "{{user}} đã rời khỏi máy chủ. Tổng số thành viên: {{count}}"
+    }
+  }
+}

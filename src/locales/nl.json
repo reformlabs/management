@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Ingelogd als {{user}}!",
+    "interaction_error": "Bu komutu çalıştırırken bir hata oluştu!",
+    "no_permission": "U beschikt niet over de benodigde machtigingen om deze opdracht te gebruiken."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Botun gecikmesini ölçer.",
+        "response": "Pong! Gecikme: {{latency}}ms"
+      },
+      "serverinfo": {
+        "description": "Biedt informatie over de server."
+      },
+      "userinfo": {
+        "description": "Geeft informatie over een gebruiker.",
+        "user_description": "Gebruiker wiens informatie zal worden verkregen"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Verwijdert een gebruiker van de server.",
+        "user_desc": "Gebruiker die moet worden geschopt",
+        "reason_desc": "Reden voor uitzetting",
+        "success": "{{user}} is succesvol van de server verwijderd. Reden: {{reden}}",
+        "error": "Kullanıcı atılırken bir hata oluştu."
+      },
+      "ban": {
+        "description": "Bant een gebruiker van de server.",
+        "user_desc": "Gebruiker om te verbannen",
+        "reason_desc": "Reden voor verbod",
+        "delete_messages_desc": "Berichtgeschiedenis verwijderen (in dagen)",
+        "success": "{{user}} is succesvol verbannen. Reden: {{reden}}",
+        "error": "Er is een fout opgetreden bij het verbannen van de gebruiker."
+      },
+      "unban": {
+        "description": "Bir kullanıcının yasaklamasını kaldırır.",
+        "id_desc": "Yasağı kaldırılacak kullanıcı ID'si",
+        "success": "De ban van de gebruiker met ID {{id}} is succesvol verwijderd.",
+        "error": "Er is een fout opgetreden bij het verwijderen van het gebruikersverbod. Zorg ervoor dat de ID correct is."
+      },
+      "timeout": {
+        "description": "Legt een uitschakelingstraf op aan een gebruiker.",
+        "user_desc": "Gebruiker om te dempen",
+        "duration_desc": "Duur (minuten)",
+        "reason_desc": "Reden voor stilte",
+        "success": "{{user}} is al {{duration}} minuten stil. Reden: {{reden}}",
+        "error": "Er is een fout opgetreden bij het dempen van de gebruiker."
+      },
+      "clear": {
+        "description": "Verwijdert het opgegeven aantal berichten.",
+        "amount_desc": "Aantal te verwijderen berichten (1-100)",
+        "success": "{{amount}} bericht is succesvol verwijderd.",
+        "error": "Er is een fout opgetreden bij het verwijderen van berichten."
+      },
+      "slowmode": {
+        "description": "Stelt de langzame modusduur van het kanaal in.",
+        "duration_desc": "Duur (seconden, 0 wordt uitgeschakeld)",
+        "success": "De langzame modus van het kanaal is ingesteld op {{duration}} seconden.",
+        "error": "Er is een fout opgetreden bij het instellen van de langzame modus."
+      },
+      "lock": {
+        "description": "Sluit het kanaal voor het verzenden van berichten.",
+        "success": "Het kanaal is succesvol vergrendeld.",
+        "error": "Er is een fout opgetreden bij het vergrendelen van het kanaal."
+      },
+      "unlock": {
+        "description": "Ontgrendelt het kanaal.",
+        "success": "Het kanaal is succesvol ontgrendeld.",
+        "error": "Er is een fout opgetreden bij het ontgrendelen van het kanaal."
+      },
+      "setup": {
+        "description": "Configureert serverinstellingen.",
+        "logchannel_desc": "Stelt het kanaal in waarnaar logs worden verzonden.",
+        "logchannel_opt_desc": "kanaal loggen",
+        "modrole_desc": "Stelt de autoriteitsrol in.",
+        "modrole_opt_desc": "Autoriteit rol",
+        "success": "{{type}} is succesvol ingesteld op {{value}}.",
+        "error": "Er is een fout opgetreden bij het opslaan van de instelling."
+      }
+    }
+  },
+  "info": {
+    "name": "Naam",
+    "id": "Identiteitskaart",
+    "created_at": "Aanmaakdatum",
+    "members": "Leden",
+    "owner": "Eigenaar",
+    "roles": "Rol",
+    "joined_at": "Datum van toetreding"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Bericht verwijderd",
+      "description": "**Kanal:** {{kanaal}}\n**Yazar:** {{auteur}}\n**İçerik:** {{content}}"
+    },
+    "message_update": {
+      "title": "Bericht bewerkt",
+      "description": "**Kanal:** {{kanaal}}\n**Yazar:** {{auteur}}\n**Eski İçerik:** {{oudeinhoud}}\n**Yeni İçerik:** {{nieuweInhoud}}"
+    },
+    "member_join": {
+      "title": "Lid is lid geworden",
+      "description": "{{user}} is lid geworden van de server. Totaal aantal leden: {{count}}"
+    },
+    "member_leave": {
+      "title": "Lid links",
+      "description": "{{user}} heeft de server verlaten. Totaal aantal leden: {{count}}"
+    }
+  }
+}

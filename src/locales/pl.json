@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Zalogowano jako {{user}}!",
+    "interaction_error": "Bu komutu çalıştırırken bir hata oluştu!",
+    "no_permission": "Nie masz niezbędnych uprawnień, aby użyć tego polecenia."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Mierzy opóźnienie bota.",
+        "response": "Pong! Gecikme: {{latency}}ms"
+      },
+      "serverinfo": {
+        "description": "Zawiera informacje o serwerze."
+      },
+      "userinfo": {
+        "description": "Dostarcza informacji o użytkowniku.",
+        "user_description": "Użytkownik, którego dane zostaną pozyskane"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Wyrzuca użytkownika z serwera.",
+        "user_desc": "Użytkownik, który ma zostać wyrzucony",
+        "reason_desc": "Powód wydalenia",
+        "success": "{{user}} został pomyślnie wyrzucony z serwera. Powód: {{powód}}",
+        "error": "Wystąpił błąd podczas wyrzucania użytkownika."
+      },
+      "ban": {
+        "description": "Blokuje użytkownika na serwerze.",
+        "user_desc": "Użytkownik do zablokowania",
+        "reason_desc": "Powód zakazu",
+        "delete_messages_desc": "Usuń historię wiadomości (w dniach)",
+        "success": "{{user}} został pomyślnie zbanowany. Powód: {{powód}}",
+        "error": "Wystąpił błąd podczas blokowania użytkownika."
+      },
+      "unban": {
+        "description": "Odblokowuje użytkownika.",
+        "id_desc": "Yasağı kaldırılacak kullanıcı ID'si",
+        "success": "Zablokowanie użytkownika o identyfikatorze {{id}} zostało pomyślnie usunięte.",
+        "error": "Wystąpił błąd podczas usuwania blokady użytkownika. Upewnij się, że identyfikator jest prawidłowy."
+      },
+      "timeout": {
+        "description": "Zadaje użytkownikowi karę za wyciszenie.",
+        "user_desc": "Użytkownik do wyciszenia",
+        "duration_desc": "Süre (dakika)",
+        "reason_desc": "Powód milczenia",
+        "success": "{{user}} {{duration}} dakika boyunca susturuldu. Sebep: {{reason}}",
+        "error": "Kullanıcı susturulurken bir hata oluştu."
+      },
+      "clear": {
+        "description": "Usuwa określoną liczbę wiadomości.",
+        "amount_desc": "Silinecek mesaj sayısı (1-100)",
+        "success": "Pomyślnie usunięto wiadomość o liczbie {{amount}}.",
+        "error": "Wystąpił błąd podczas usuwania wiadomości."
+      },
+      "slowmode": {
+        "description": "Ustawia czas trwania trybu wolnego kanału.",
+        "duration_desc": "Czas trwania (sekundy, 0 wyłącza się)",
+        "success": "Tryb spowolnienia kanału jest ustawiony na {{duration}} sekund.",
+        "error": "Yavaş mod ayarlanırken bir hata oluştu."
+      },
+      "lock": {
+        "description": "Kanalı mesaj gönderimine kapatır.",
+        "success": "Kanał został pomyślnie zablokowany.",
+        "error": "Wystąpił błąd podczas blokowania kanału."
+      },
+      "unlock": {
+        "description": "Odblokowuje kanał.",
+        "success": "Kanał został pomyślnie odblokowany.",
+        "error": "Wystąpił błąd podczas odblokowywania kanału."
+      },
+      "setup": {
+        "description": "Konfiguruje ustawienia serwera.",
+        "logchannel_desc": "Ustawia kanał, do którego będą wysyłane logi.",
+        "logchannel_opt_desc": "kanał dziennika",
+        "modrole_desc": "Ustawia rolę organu.",
+        "modrole_opt_desc": "Rola autorytetu",
+        "success": "{{type}} pomyślnie ustawiono na {{value}}.",
+        "error": "Wystąpił błąd podczas zapisywania ustawienia."
+      }
+    }
+  },
+  "info": {
+    "name": "Nazwa",
+    "id": "ID",
+    "created_at": "Data utworzenia",
+    "members": "Członkowie",
+    "owner": "Właściciel",
+    "roles": "Wałek",
+    "joined_at": "Data przyłączenia"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Wiadomość usunięta",
+      "description": "**Kanal:** {{kanał}}\n**Yazar:** {{autor}}\n**İçerik:** {{treść}}"
+    },
+    "message_update": {
+      "title": "Wiadomość edytowana",
+      "description": "**Kanal:** {{kanał}}\n**Yazar:** {{autor}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "Członek dołączył",
+      "description": "{{user}} dołączył do serwera. Całkowita liczba członków: {{count}}"
+    },
+    "member_leave": {
+      "title": "Członek odszedł",
+      "description": "{{user}} opuścił serwer. Całkowita liczba członków: {{count}}"
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "¡Ha iniciado sesión como {{usuario}}!",
+    "interaction_error": "¡Ocurrió un error al ejecutar este comando!",
+    "no_permission": "No tienes los permisos necesarios para utilizar este comando."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Mide la latencia del bot.",
+        "response": "¡Apestar! Generación: {{latencia}}ms"
+      },
+      "serverinfo": {
+        "description": "Proporciona información sobre el servidor."
+      },
+      "userinfo": {
+        "description": "Proporciona información sobre un usuario.",
+        "user_description": "Usuario cuya información se obtendrá"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Expulsa a un usuario del servidor.",
+        "user_desc": "Usuario a ser expulsado",
+        "reason_desc": "Motivo de la expulsión",
+        "success": "{{user}} ha sido expulsado exitosamente del servidor. Razón: {{razón}}",
+        "error": "Se produjo un error al expulsar al usuario."
+      },
+      "ban": {
+        "description": "Prohíbe a un usuario del servidor.",
+        "user_desc": "Usuario a prohibir",
+        "reason_desc": "Razón de la prohibición",
+        "delete_messages_desc": "Eliminar el historial de mensajes (en días)",
+        "success": "{{user}} ha sido baneado exitosamente. Razón: {{razón}}",
+        "error": "Se produjo un error al prohibir al usuario."
+      },
+      "unban": {
+        "description": "Desbanea a un usuario.",
+        "id_desc": "ID de usuario para ser desbaneado",
+        "success": "La prohibición del usuario con ID {{id}} se ha eliminado con éxito.",
+        "error": "Se produjo un error al eliminar la prohibición de usuarios. Asegúrese de que la identificación sea correcta."
+      },
+      "timeout": {
+        "description": "Inflige una penalización de silenciamiento a un usuario.",
+        "user_desc": "Usuario para silenciar",
+        "duration_desc": "Duración (minutos)",
+        "reason_desc": "Razón del silencio",
+        "success": "{{user}} ha sido silenciado durante {{duration}} minutos. Razón: {{razón}}",
+        "error": "Se produjo un error al silenciar al usuario."
+      },
+      "clear": {
+        "description": "Belirtilen miktarda mesajı siler.",
+        "amount_desc": "Número de mensajes para eliminar (1-100)",
+        "success": "{{amount}} mensaje eliminado exitosamente.",
+        "error": "Se produjo un error al eliminar mensajes."
+      },
+      "slowmode": {
+        "description": "Establece la duración del modo lento del canal.",
+        "duration_desc": "Duración (segundos, 0 se apaga)",
+        "success": "El modo lento del canal está configurado en {{duration}} segundos.",
+        "error": "Se produjo un error al configurar el modo lento."
+      },
+      "lock": {
+        "description": "Cierra el canal al envío de mensajes.",
+        "success": "El canal se ha bloqueado con éxito.",
+        "error": "Se produjo un error al bloquear el canal."
+      },
+      "unlock": {
+        "description": "Desbloquea el canal.",
+        "success": "El canal se ha desbloqueado con éxito.",
+        "error": "Se produjo un error al desbloquear el canal."
+      },
+      "setup": {
+        "description": "Configura los ajustes del servidor.",
+        "logchannel_desc": "Establece el canal al que se enviarán los registros.",
+        "logchannel_opt_desc": "canal de registro",
+        "modrole_desc": "Establece el rol de autoridad.",
+        "modrole_opt_desc": "Rol de autoridad",
+        "success": "{{type}} se configuró correctamente en {{value}}.",
+        "error": "Se produjo un error al guardar la configuración."
+      }
+    }
+  },
+  "info": {
+    "name": "Nombre",
+    "id": "IDENTIFICACIÓN",
+    "created_at": "Fecha de creación",
+    "members": "Miembros",
+    "owner": "Dueño",
+    "roles": "Rodillo",
+    "joined_at": "Fecha de incorporación"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Mensaje eliminado",
+      "description": "**Kanal:** {{canal}}\n**Yazar:** {{autor}}\n**İçerik:** {{contenido}}"
+    },
+    "message_update": {
+      "title": "Mensaje editado",
+      "description": "**Kanal:** {{canal}}\n**Yazar:** {{autor}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{nuevoContenido}}"
+    },
+    "member_join": {
+      "title": "Miembro unido",
+      "description": "{{user}} se unió al servidor. Total de miembros: {{count}}"
+    },
+    "member_leave": {
+      "title": "Miembro izquierdo",
+      "description": "{{user}} ha abandonado el servidor. Total de miembros: {{count}}"
+    }
+  }
+}

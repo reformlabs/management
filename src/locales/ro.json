@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Conectat ca {{user}}!",
+    "interaction_error": "A apărut o eroare la rularea acestei comenzi!",
+    "no_permission": "Nu aveți permisiunile necesare pentru a utiliza această comandă."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Botun gecikmesini ölçer.",
+        "response": "Pong! Gecikme: {{latency}}ms"
+      },
+      "serverinfo": {
+        "description": "Sunucu hakkında bilgi verir."
+      },
+      "userinfo": {
+        "description": "Oferă informații despre un utilizator.",
+        "user_description": "Utilizator ale cărui informații vor fi obținute"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Loviți un utilizator de pe server.",
+        "user_desc": "Utilizatorul trebuie dat cu piciorul",
+        "reason_desc": "Motivul expulzării",
+        "success": "{{user}} a fost eliminat cu succes de pe server. Motiv: {{motiv}}",
+        "error": "A apărut o eroare la lovirea utilizatorului."
+      },
+      "ban": {
+        "description": "Interzice un utilizator de pe server.",
+        "user_desc": "Utilizator de interzis",
+        "reason_desc": "Yasaklanma sebebi",
+        "delete_messages_desc": "Ștergeți istoricul mesajelor (în zile)",
+        "success": "{{user}} a fost interzis cu succes. Motiv: {{motiv}}",
+        "error": "A apărut o eroare la interzicerea utilizatorului."
+      },
+      "unban": {
+        "description": "Anulează interdicția unui utilizator.",
+        "id_desc": "Yasağı kaldırılacak kullanıcı ID'si",
+        "success": "Interdicția utilizatorului cu ID {{id}} a fost eliminată cu succes.",
+        "error": "A apărut o eroare la eliminarea interdicției utilizatorului. Asigurați-vă că ID-ul este corect."
+      },
+      "timeout": {
+        "description": "Aplică o penalizare de tăcere unui utilizator.",
+        "user_desc": "Utilizatorul de a dezactiva sunetul",
+        "duration_desc": "Durata (minute)",
+        "reason_desc": "Motiv pentru tăcere",
+        "success": "{{user}} a fost oprit timp de {{duration}} minute. Motiv: {{motiv}}",
+        "error": "A apărut o eroare la dezactivarea sunetului utilizatorului."
+      },
+      "clear": {
+        "description": "Șterge cantitatea specificată de mesaje.",
+        "amount_desc": "Numărul de mesaje de șters (1-100)",
+        "success": "{{amount}} mesaj a fost șters cu succes.",
+        "error": "A apărut o eroare la ștergerea mesajelor."
+      },
+      "slowmode": {
+        "description": "Setează durata modului lent al canalului.",
+        "duration_desc": "Durată (secunde, 0 opriri)",
+        "success": "Modul lent canal este setat la {{duration}} secunde.",
+        "error": "A apărut o eroare la setarea modului lent."
+      },
+      "lock": {
+        "description": "Închide canalul pentru trimiterea mesajelor.",
+        "success": "Canalul a fost blocat cu succes.",
+        "error": "A apărut o eroare la blocarea canalului."
+      },
+      "unlock": {
+        "description": "Deblochează canalul.",
+        "success": "Canalul a fost deblocat cu succes.",
+        "error": "A apărut o eroare la deblocarea canalului."
+      },
+      "setup": {
+        "description": "Configura setările serverului.",
+        "logchannel_desc": "Setează canalul către care vor fi trimise jurnalele.",
+        "logchannel_opt_desc": "Log kanalı",
+        "modrole_desc": "Stabilește rolul de autoritate.",
+        "modrole_opt_desc": "Rolul de autoritate",
+        "success": "{{type}} setat cu succes la {{value}}.",
+        "error": "Ayar kaydedilirken bir hata oluştu."
+      }
+    }
+  },
+  "info": {
+    "name": "Nume",
+    "id": "ID",
+    "created_at": "Data creării",
+    "members": "Membrii",
+    "owner": "Proprietar",
+    "roles": "Rolă",
+    "joined_at": "Data aderării"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Mesaj șters",
+      "description": "**Kanal:** {{canal}}\n**Yazar:** {{author}}\n**İçerik:** {{conținut}}"
+    },
+    "message_update": {
+      "title": "Mesaj editat",
+      "description": "**Kanal:** {{canal}}\n**Yazar:** {{author}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "Membru alăturat",
+      "description": "{{user}} s-a alăturat serverului. Total membri: {{count}}"
+    },
+    "member_leave": {
+      "title": "Membru stânga",
+      "description": "{{user}} a părăsit serverul. Total membri: {{count}}"
+    }
+  }
+}

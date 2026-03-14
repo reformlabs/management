@@ -1,0 +1,111 @@
+{
+  "system": {
+    "ready_log": "Prisijungęs kaip {{user}}!",
+    "interaction_error": "Vykdant šią komandą įvyko klaida!",
+    "no_permission": "Bu komutu kullanmak için gerekli yetkiniz yok."
+  },
+  "commands": {
+    "utility": {
+      "ping": {
+        "description": "Matuoja roboto delsą.",
+        "response": "Pong! Gecikme: {{latency}} ms"
+      },
+      "serverinfo": {
+        "description": "Pateikiama informacija apie serverį."
+      },
+      "userinfo": {
+        "description": "Pateikiama informacija apie vartotoją.",
+        "user_description": "Vartotojas, kurio informacija bus gauta"
+      }
+    },
+    "moderation": {
+      "kick": {
+        "description": "Išmuša vartotoją iš serverio.",
+        "user_desc": "Vartotojas, kurį reikia spardyti",
+        "reason_desc": "Pašalinimo priežastis",
+        "success": "{{user}} sėkmingai pašalintas iš serverio. Priežastis: {{reason}}",
+        "error": "Spardant vartotoją įvyko klaida."
+      },
+      "ban": {
+        "description": "Uždraudžia vartotoją iš serverio.",
+        "user_desc": "Vartotojas, kurį reikia uždrausti",
+        "reason_desc": "Draudimo priežastis",
+        "delete_messages_desc": "Ištrinti pranešimų istoriją (dienomis)",
+        "success": "{{user}} sėkmingai užblokuotas. Priežastis: {{reason}}",
+        "error": "Uždraudžiant vartotoją įvyko klaida."
+      },
+      "unban": {
+        "description": "Panaikina vartotojo draudimą.",
+        "id_desc": "Yasağı kaldırılacak kullanıcı ID'si",
+        "success": "Naudotojo, kurio ID {{id}}, draudimas sėkmingai pašalintas.",
+        "error": "Šalinant vartotojo draudimą įvyko klaida. Įsitikinkite, kad ID yra teisingas."
+      },
+      "timeout": {
+        "description": "Užtraukia vartotojui nutildymo nuobaudą.",
+        "user_desc": "Nutildyti naudotoją",
+        "duration_desc": "Trukmė (min.)",
+        "reason_desc": "Priežastis tylėti",
+        "success": "{{user}} {{duration}} dakika boyunca susturuldu. Sebep: {{reason}}",
+        "error": "Nutildant naudotoją įvyko klaida."
+      },
+      "clear": {
+        "description": "Ištrina nurodytą kiekį pranešimų.",
+        "amount_desc": "Ištrintinų pranešimų skaičius (1–100)",
+        "success": "{{amount}} pranešimas sėkmingai ištrintas.",
+        "error": "Trinant pranešimus įvyko klaida."
+      },
+      "slowmode": {
+        "description": "Nustatoma kanalo lėto režimo trukmė.",
+        "duration_desc": "Trukmė (sekundės, 0 išsijungia)",
+        "success": "Lėtas kanalo režimas nustatytas į {{duration}} sek.",
+        "error": "Nustatant lėtą režimą įvyko klaida."
+      },
+      "lock": {
+        "description": "Uždaro kanalą pranešimų siuntimui.",
+        "success": "Kanalas sėkmingai užrakintas.",
+        "error": "Užrakinant kanalą įvyko klaida."
+      },
+      "unlock": {
+        "description": "Atrakina kanalą.",
+        "success": "Kanalas sėkmingai atrakintas.",
+        "error": "Atrakinant kanalą įvyko klaida."
+      },
+      "setup": {
+        "description": "Konfigūruoja serverio nustatymus.",
+        "logchannel_desc": "Nustato kanalą, į kurį bus siunčiami žurnalai.",
+        "logchannel_opt_desc": "žurnalo kanalas",
+        "modrole_desc": "Nustato autoriteto vaidmenį.",
+        "modrole_opt_desc": "Autoriteto vaidmuo",
+        "success": "{{type}} sėkmingai nustatytas į {{value}}.",
+        "error": "Išsaugant nustatymą įvyko klaida."
+      }
+    }
+  },
+  "info": {
+    "name": "Vardas",
+    "id": "ID",
+    "created_at": "Sukūrimo data",
+    "members": "nariai",
+    "owner": "Savininkas",
+    "roles": "Volelis",
+    "joined_at": "Prisijungimo data"
+  },
+  "logs": {
+    "message_delete": {
+      "title": "Žinutė ištrinta",
+      "description": "**Kanal:** {{channel}}\n**Yazar:** {{autorius}}\n**İçerik:** {{content}}"
+    },
+    "message_update": {
+      "title": "Laiškas redaguotas",
+      "description": "**Kanal:** {{channel}}\n**Yazar:** {{autorius}}\n**Eski İçerik:** {{oldContent}}\n**Yeni İçerik:** {{newContent}}"
+    },
+    "member_join": {
+      "title": "Narys prisijungė",
+      "description": "{{user}} prisijungė prie serverio. Iš viso narių: {{count}}"
+    },
+    "member_leave": {
+      "title": "Kairysis narys",
+      "description": "{{user}} paliko serverį. Iš viso narių: {{count}}"
+    }
+  }
+}
