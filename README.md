@@ -3,7 +3,7 @@
 </div>
 
 # Official Management App of Reform Labs
-An advanced discord.js v14 and TypeScript based bot that supports all the languages that Discord supports and official discord app of Reform Labs main server.
+An advanced discord.js v14 and TypeScript based bot that supports all the languages that Discord supports and official discord app of Reform Labs main server. More: https://github.com/reformlabs
 
 > [!IMPORTANT]
 > This project is developed by **Reform Labs**. Users are free to use the system and contribute, but they may not redistribute it by claiming ownership as if it were their own project.
